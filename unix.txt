@@ -1,0 +1,19 @@
+1. xemacs & - open text editor in the background
+
+2. cd - change directory                     
+
+3. cat ~/.bashrc > tmpfile.txt - copies the content of bashrc to tmpfile text file
+
+4. ln -s  tmpfile.txt  ~/tmp-alias - creates sympolic link between the two files
+
+5. ls -al - lists all files in current directory in a list including hidden ones
+
+6. chmod a+rwx  tmpfile.txt - gives all users read, write and excute access to the file
+
+7. grep  bash   /etc/passwd - searches for files with "bash" in the given directory
+
+8. ps -ef  |  more - list all processes listings and then open the more program
+
+9. man 2 chown - View the Linux manual entry of section 2 of the chown entry.
+
+10. gcc  test.c  2 > error-msg - Compiles test.c and outputs error messages in a file    
