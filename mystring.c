@@ -37,7 +37,7 @@ char  *mystrcpy (char *dst, const char *src)
   	dst++;
   	src++;
   }
-  return *dst;
+  return dst;
 }
 
 /*
@@ -49,8 +49,19 @@ char  *mystrcpy (char *dst, const char *src)
  */
 int mystrcmp(const char *s1, const char *s2)
 {
-  /* Complete the body of the function */
-	return 0;
+  while(*s1 == *s2){
+    if(*s1 == '\0' || *s2 == '\0'){
+      break;
+    }
+    s1++;
+    s2++;
+  }
+
+  if(*s1 == '\0' && *s2 == '\0'){
+    return 0;
+  } else {
+    return -1;
+  }
 }
 
 /*

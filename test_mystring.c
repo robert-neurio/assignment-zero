@@ -16,6 +16,7 @@ int main()
   assert (mystrlen("cmpt 300") == 8);
   
   mystrcpy (s1, "I am testing my string functions!");
+  printf("Test: %s\n", s1);
   assert(strcmp(s1, "I am testing my string functions!") == 0);
   
 
