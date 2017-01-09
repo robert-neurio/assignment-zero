@@ -37,7 +37,7 @@ char  *mystrcpy (char *dst, const char *src)
   	dst++;
   	src++;
   }
-  return dst;
+  return *dst;
 }
 
 /*
@@ -74,7 +74,19 @@ int mystrcmp(const char *s1, const char *s2)
 */
 char *mystrdup(const char *s1)
 {
-  /* Complete the body of the function */
-	return NULL;
+  char* copy;
+  char* start;
+
+  copy = malloc(sizeof(char) * (mystrlen(s1) + 1)); 
+
+  start = copy;
+  while((*s1)!='\0'){
+    *copy++ = *s1++;
+  }
+  *copy = '\0';
+     
+  copy = start;
+
+  return copy;
 }
 
